@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Main {
+
     public static void main(String[] args) {
         Scanner cargaDeDatos = new Scanner(System.in);
         System.out.println("Ingresa tu peso pe mascota ");
