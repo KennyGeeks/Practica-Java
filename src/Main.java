@@ -4,6 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+
         //Calculadora de edad de un perro
         Scanner Teclado = new Scanner(System.in);
         Integer EdadPerro;
