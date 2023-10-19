@@ -5,13 +5,16 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner Teclado = new Scanner(System.in);
-        Integer Precio;
+
+        Integer PrecioRegular;
         Integer Porcentaje;
-        Integer Descuento;
-        System.out.println("Ingresa tu Precio sin descuento");
-        System.out.println("Ingresa tu Porcentaje de descuento pex ");
-        Descuento = (Precio * Porcentaje) / 100 ;
-        System.out.println("Este Seria tu precio con Descuento pe Misio: " + Descuento);
+        Integer PrecioTotal;
+        System.out.println("Ingresa tu Precio Regular");
+        PrecioRegular = Teclado.nextInt();
+        System.out.println("Ingresa tu Porcentaje de Descuento ");
+        Porcentaje = Teclado.nextInt();
+        PrecioTotal = PrecioRegular - (PrecioRegular * Porcentaje) / 100;
+        System.out.println("Precio Total con Descuento Aplicado: " + PrecioTotal);
     }
     }
 
@@ -20,10 +23,10 @@ public class Main {
         Scanner Teclado = new Scanner(System.in);
         double Millas;
         double Kilometros;
-        System.out.println("Ingresa las Millas pe JalaBolas");
+        System.out.println("Ingresar Millas");
         Millas = Teclado.nextDouble();
         Kilometros = Millas *1.60934;
-        System.out.println("Este es tu kilometraje de tus millas pe mascota :" + Kilometros);
+        System.out.println("Este es tu kilometraje de tus millas:" + Kilometros);
 
     } */
 
