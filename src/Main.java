@@ -1,11 +1,24 @@
 import java.util.Scanner;
-
-public class Main {
-
+public class Main{
     public static void main(String[] args) {
+    Scanner teclado = new Scanner(System.in);
+    Integer NumeroUsuario = 0;
+    Integer NumeroAleatorio = (int) Math.floor(Math.random() * 100);
+    System.out.println(" Cual es tu numero aleatorio");
+    NumeroUsuario = teclado.nextInt();
+if (NumeroUsuario == NumeroAleatorio) {
+    System.out.println("Adivinaste el numero !! ");
+} else {
+    System.out.println("Numero Equivocado ");
+}
+    }
+    }
+
+
+
+/*  TAREA 3 : CALCULADORA DE PRECIOS CON DESCUENTO APLICADO
 
         Scanner Teclado = new Scanner(System.in);
-
         Integer PrecioRegular;
         Integer Porcentaje;
         Integer PrecioTotal;
@@ -15,11 +28,10 @@ public class Main {
         Porcentaje = Teclado.nextInt();
         PrecioTotal = PrecioRegular - (PrecioRegular * Porcentaje) / 100;
         System.out.println("Precio Total con Descuento Aplicado: " + PrecioTotal);
-    }
-    }
-
+    }*/
 
         /* TAREA2: Calculadora de Millas A Kilometros
+
         Scanner Teclado = new Scanner(System.in);
         double Millas;
         double Kilometros;
@@ -30,8 +42,8 @@ public class Main {
 
     } */
 
-
         /* TAREA1: Calculadora de edad de un perro
+
         Scanner Teclado = new Scanner(System.in);
         Integer EdadPerro;
         Integer EdadTotalPerro;
